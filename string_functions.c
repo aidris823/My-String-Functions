@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "assignment.h"
+//#include "assignment.h"
 
 int string_len(char string[]);
 char * string_copy(char* dest, char *source);
@@ -27,6 +27,14 @@ char * string_chr(char *s, char c){
   }
   return NULL;
 }
+
 int main(){
+  //System's functions:
+  char charizard[] = "Talos guide you.";
+  int length = strlen(charizard);
+  printf("Length of |%s| : %d\n",charizard,length);
+  int my_length = string_len(charizard);
+  printf("Length of [%s] : %d\n",charizard,my_length);
+  //String_len test:
 }
 
